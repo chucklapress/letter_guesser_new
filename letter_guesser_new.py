@@ -44,7 +44,12 @@ while turns > 0 :
         break
     guess = input('guess a letter')
     guesses += guess
-    turns -= 1
+    if guess not in secret_word:
+        turns -= 1
+        print('letter not in word')
+        if turns == 0:
+            print(secret_word)
+
 
 
 
