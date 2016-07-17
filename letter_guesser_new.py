@@ -31,14 +31,18 @@ guesses = "a,e,i,o,u"
 
 turns = 8
 while turns > 0 :
+    missed = 0
     for letter in secret_word:
         if letter in guesses:
             print(letter),
         else:
             print("_")
+            missed += 1
+            print(missed)
     guess = input('guess a letter')
     guesses += guess
     turns -= 1
+
 
 
 
