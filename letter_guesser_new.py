@@ -27,9 +27,6 @@ random_word = random.choice(words)
 list(random_word)
 secret_word = (random_word)
 print(secret_word)
-for letter in secret_word:
-    print("-")
-
 guesses = "a,e,i,o,u"
 
 turns = 8
