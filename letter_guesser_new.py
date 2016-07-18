@@ -27,9 +27,9 @@ random_word = random.choice(words)
 list(random_word)
 secret_word = (random_word)
 print(secret_word)
-guesses = "a,e,i,o,u"
-
-turns = 6
+#guesses = "a,e,i,o,u"
+guesses = []
+turns = 8
 while turns > 0 :
     missed = 0
     for letter in secret_word:
@@ -49,7 +49,6 @@ while turns > 0 :
         print('letter not in word')
         if turns == 0:
             print(secret_word)
-
 
 
 
