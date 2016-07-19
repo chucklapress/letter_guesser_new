@@ -23,12 +23,12 @@ import random
  #       print("_")
 file = "/usr/share/dict/words"
 words = open(file).read().splitlines()
-random_word = random.choice(words)
+random_word = random.choice(words).lower()
 list(random_word)
 secret_word = (random_word)
 print(secret_word)
-#guesses = "a,e,i,o,u"
-guesses = []
+guesses = "a,e,i,o,u"
+#guesses = []
 turns = 8
 while turns > 0 :
     missed = 0
